@@ -5,7 +5,7 @@ FROM python:3.6 AS builder
 WORKDIR /app
 
 # Copy the application code to the container
-COPY app.py .
+COPY . .
 
 # Install the Python dependencies
 RUN pip install --no-cache-dir -r requirements.txt
